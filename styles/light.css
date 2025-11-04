@@ -1,39 +1,36 @@
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
 :root.theme-light {
-  --main-text-color: #353430;
-  --bg-color: #fff1f7;
-  --main-header-color: #ffc2e6;
-  --button-color: #353430;
-  --button-hover-border: #32312d66;
-  --section-header-color: #353430;
-  --article-header-color: #353430;
-  --article-bg-color: #ff8dcb;
-  --link-shadow-color: #ff8dcb;
+  --color-accent: rgba(53, 52, 48, 1);
+  --color-decor: rgba(255, 141, 203, 1);
+  --color-accent-transparent: rgba(50, 49, 45, 0.4);
   --bg-image: url("../images/cover-image-light.png");
-  --visible: hidden;
+  --color-bg-main: rgba(255, 241, 247, 1);
+  --color-primary: rgba(255, 194, 230, 1);
+  --color-text-main: rgba(53, 52, 48, 1);
+  --color-text-secondary: rgba(53, 52, 48, 1);
 }
 
-.theme-light .header__rec,
-.theme-light .header__rec::after {
-  visibility: hidden;
+.theme-light .header__label {
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --main-text-color: #353430;
-    --bg-color: #fff1f7;
-    --main-header-color: #ffc2e6;
-    --button-color: #353430;
-    --button-hover-border: #32312d66;
-    --section-header-color: #353430;
-    --article-header-color: #353430;
-    --article-bg-color: #ff8dcb;
-    --link-shadow-color: #ff8dcb;
+    --color-accent: rgba(53, 52, 48, 1);
+    --color-decor: rgba(255, 141, 203, 1);
+    --color-accent-transparent: rgba(50, 49, 45, 0.4);
     --bg-image: url("../images/cover-image-light.png");
-    --visible: hidden;
+    --color-bg-main: rgba(255, 241, 247, 1);
+    --color-primary: rgba(255, 194, 230, 1);
+    --color-text-main: rgba(53, 52, 48, 1);
+    --color-text-secondary: rgba(53, 52, 48, 1);
   }
-
-  .header__rec,
-  .header__rec::after {
-    visibility: hidden;
+  .theme-auto .header__label {
+    display: none;
   }
 }

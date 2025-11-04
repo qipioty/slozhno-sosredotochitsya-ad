@@ -1,18 +1,20 @@
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
 :root.theme-dark {
-  --main-text-color: #f1b2ce;
-  --bg-color: #000028;
-  --main-header-color: #db00ff;
-  --button-color: #ff0070;
-  --button-hover-border: #ff007066;
-  --section-header-color: #ff0070;
-  --article-header-color: #000028;
-  --article-bg-color: #ff0070;
-  --link-shadow-color: #ff0070;
+  --color-accent: rgba(255, 0, 112, 1);
+  --color-decor: rgba(255, 0, 112, 1);
+  --color-accent-transparent: rgba(255, 0, 112, 0.4);
   --bg-image: url("../images/cover-image-dark.png");
-  --visible: visible;
+  --color-bg-main: rgba(0, 0, 40, 1);
+  --color-primary: rgba(219, 0, 255, 1);
+  --color-text-main: rgba(241, 178, 206, 1);
+  --color-text-secondary: rgba(0, 0, 40, 1);
 }
 
-.theme-dark .header__rec,
-.theme-dark .header__rec::after {
-  visibility: visible;
+.theme-dark .header__label {
+  display: flex;
 }
